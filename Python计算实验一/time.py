@@ -1,0 +1,14 @@
+x=input('请输入时间(时/分/秒)：')
+a,b,c=map(int,x.split('/'))
+c+=1
+y=c/60
+c%=60
+b+=y
+z=b/60
+b%=60
+a+=z
+a%=24
+a=str(int(a))+'时'
+b=str(int(b))+'分'
+c=str(int(c))+'秒'
+print(a,b,c,sep='/')
